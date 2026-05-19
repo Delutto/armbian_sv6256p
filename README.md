@@ -15,10 +15,10 @@ This repository contains a fully functional port of the SSV6256P driver to Linux
 
 ### Tested Hardware
 
-- **SoC**: Allwinner H616 (ARM Cortex-A53)
-- **Board**: X96 Q TV Box
+- **SoC**: Allwinner H313/ik316 (ARM Cortex-A53)
+- **Board**: HiBOX1644_V1.0
 - **Interface**: SDIO
-- **Kernel**: Armbian_25.05.0_linux_6.12.11-edge-sunxi64
+- **Kernel**: Armbian_v24.11_Linux_6.6.44-current-sunxi64
 
 ## ✅ Kernel Compatibility
 
