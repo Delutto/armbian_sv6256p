@@ -26,7 +26,7 @@ This repository contains a fully functional port of the SSV6256P driver to Linux
 |---------------|--------|-------|
 | 6.12.x | ✅ Tested | Fully working |
 | 6.13.x+ | ✅ Expected | Should work (API-compatible) |
-| 6.6 LTS | ⚠️ Untested | May work with minor adjustments |
+| 6.6 LTS | ✅ Tested | Use the 6.6.44 branche |
 | 5.x | ❌ Not supported | Use original driver |
 | 4.x | ❌ Not supported | Use original driver |
 
