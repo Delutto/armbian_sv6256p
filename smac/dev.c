@@ -3366,7 +3366,7 @@ tx_mpdu:
         mutex_unlock(&sc->mutex);
         return 0;
     }
-    static void ssv6200_stop(struct ieee80211_hw *hw, bool suspend) {
+    static void ssv6200_stop(struct ieee80211_hw *hw) {
         struct ssv_softc *sc=hw->priv;
         u32 count=0;
         dev_dbg(sc->dev, KERN_INFO "%s(): sc->ps_status=%d\n", __FUNCTION__,sc->ps_status);
@@ -4538,9 +4538,9 @@ out:
         .wake_tx_queue = ieee80211_handle_wake_tx_queue,
         //.wake_tx_queue = NULL,
         /* Use mac80211 emulation for single-channel hardware */
-        .add_chanctx = ieee80211_emulate_add_chanctx,
-        .remove_chanctx = ieee80211_emulate_remove_chanctx,
-        .change_chanctx = ieee80211_emulate_change_chanctx,
+        //.add_chanctx = ieee80211_emulate_add_chanctx,
+        //.remove_chanctx = ieee80211_emulate_remove_chanctx,
+        //.change_chanctx = ieee80211_emulate_change_chanctx,
         .assign_vif_chanctx = NULL,
         .unassign_vif_chanctx = NULL,
     };
